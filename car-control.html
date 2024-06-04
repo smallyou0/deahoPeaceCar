@@ -12,8 +12,9 @@
   <body class="bg-white">
     <header class="header-sub block">
       <div class="align triple bg-f8 border-bottom">
-        <a class="btn-back" href="javascript:window.history.back();"></a>
-        <h2>정기세차 신청</h2>
+        <a class="" href="#none"></a>
+        <h2>차량 제어</h2>
+        <div></div>
       </div>
     </header>
     <main class="main pb150">
@@ -26,12 +27,12 @@
         </div>
         <div class="list-type7-wrap align vm center">
           <ul class="list-type7">
-            <li class="align column">
+            <li class="align column active">
               <div class="img-wrap align vm"><img src="images/ico_lock_door.svg" alt=""></div>
               <div class="mt8 txt-center text-type4 fz12 fw500">문 잠금</div>
             </li>
             <li class="align column">
-              <div class="img-wrap align vm"><img src="images/ico_turn.svg" alt=""></div>
+              <div class="img-wrap align vm active"><img src="images/ico_turn.svg" alt=""></div>
               <div class="mt8 txt-center text-type4 fz12 fw500">시동 켜기</div>
             </li>
             <li class="align column">
@@ -54,7 +55,12 @@
         </div>
       </section>
     </main>
-
+    <script>
+      $('.list-type7 li').click(function() {
+        $('.list-type7 li').removeClass('active')  
+        $(this).toggleClass('active')  
+      })
+    </script>
     <!-- 네비 하단영역 -->
     <div class="nav-foot">
       <div class="nav-foot__layer">
