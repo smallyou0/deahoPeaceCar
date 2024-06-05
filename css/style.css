@@ -558,6 +558,12 @@ legend,
 .pb35 {
   padding-bottom: 3.5rem;
 }
+.pb110 {
+  padding-bottom: 11.0rem;
+}
+.pb120 {
+  padding-bottom: 12.0rem;
+}
 .pb130 {
   padding-bottom: 13.0rem;
 }
@@ -3638,7 +3644,7 @@ body.popup-open::before {
 }
 .completed {
   /* height: calc(100vh - 283px); */
-  padding-top: 5.4rem;
+  padding-top: 2vw;
   box-sizing: border-box;
   display: flex;
   align-items: center;
