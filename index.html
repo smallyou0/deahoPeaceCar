@@ -8,102 +8,24 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <script type="text/javascript">
+      // 3초 후에 b.html로 이동
+      function redirectToB() {
+          setTimeout(function() {
+              window.location.href = "home.html";
+          }, 2000); // 3000 밀리초 = 3초
+      }
+  </script>
   </head>
-  <body class="bg-f8">
-    <header class="header">
-      <div>
-        <h1 class="h1"><a class="logo" href="index.html"></a></h1>
-        <div class="header__alarm">
-          <a class="btn-alarm" href="#"></a>
-        </div>
-      </div>
-    </header>
-    <main class="main pb150">
+  <body class="bg-white" onload="redirectToB()">
+    <main class="main pt0">
       <section class="content">
-        <div class="vehicle-management align both vm pt26">
-          <a class="select ico1" href="">아반떼(CN7)<br> 하이브리드 인스퍼레이션</a>
-          <a class="link" href="#none" onclick="alert('중비중입니다')">보유차량 관리</a>
-        </div>
-        <div class="title-main align vm pt8">
-          <h3 class="h3">123가 4567</h3>
-        </div>
-        <div class="card-main mt12 px16 py18">
-              <div class="align both">
-                <img class="w50" src="images/img_car.svg" alt="">
-                  <ul class="w50 list-type5 ml6">
-                    <li>
-                      <div class="title">총 주행거리</div>
-                      <div class="cont">24,869km</div>
-                    </li>
-                    <li>
-                      <div class="title">주행 가능거리</div>
-                      <div class="cont">287km</div>
-                    </li>
-                    <li>
-                      <div class="title">마지막 점검</div>
-                      <div class="cont">46일 경과</div>
-                    </li>
-                  </ul>
-              </div>
-        </div>
-        <div class="title-main align vm pt32">
-          <h2 class="h2">정기세차 일정</h2>
-        </div>
-        <a class="card-main mt12 px16 py18 text-center" href="car-wash-reservation.html">
-            <div class="">
-              <div class="text-type1">구독권 추가구매</div>
-              <p class="text-type2 ico1 mt8 mr24">예약하러 가기</p>
-            </div>
-        </a>
-        <div class="card-main mt16">
-          <ul class="useful-info-list">
-            <li class="useful-info-list__link">
-              <a href="#none" onclick="alert('중비중입니다')">
-                <div class="logo align center vm">
-                  <img src="./images/ico_car_scanner.svg" alt="" />
-                </div>
-                <span>차량 OBD 스캐너</span>
-              </a>
-              <a href="#none" onclick="alert('중비중입니다')">
-                <div class="logo align center vm">
-                  <img src="./images/ico_car_report.svg" alt="" />
-                </div>
-                <span>차량 관리 리포트</span>
-              </a>
-              <a href="#none" onclick="alert('중비중입니다')">
-                <div class="logo align center vm">
-                  <img src="./images/ico_car_inspection.svg" alt="" />
-                </div>
-                <span>차량 점검 신청</span>
-              </a>
-            </li>
-          </ul>
+        <div class="logo-wrap align center vm">
+          <h1><img src="images/logo_peacecar.svg" alt=""></h1>
         </div>
       </section>
     </main>
 
-    <!-- 네비 하단영역 -->
-    <div class="nav-foot">
-      <div class="nav-foot__layer">
-        <div class="nav-foot__mode">
-          <a class="btn-close-layer btn-weighbridge" href="weight-shot.html">계근대</a>
-          <a class="btn-close-layer btn-lame" href="weight-shot.html">앉은뱅이</a>
-        </div>
-      </div>
-      <!-- <div class="writing-explanation">작성중인 계량증명서가 있습니다</div> -->
-      <button 
-        class="btn-select" 
-        type="button" 
-        onclick="location.href='car-control.html'"></button>
-      <nav class="nav-foot__cont">
-        <ul>
-          <li class="ico-main active"><a href="index.html">메인</a></li>
-          <li class="ico-board"><a href="car-wash.html">세차</a></li>
-          <li class="ico-doc"><a href="#none" onclick="alert('중비중입니다')">주변</a></li>
-          <li class="ico-mypage"><a href="#none" onclick="alert('중비중입니다')">더보기</a></li>
-        </ul>
-      </nav>
-    </div>
   </body>
   <script src="js/button.js"></script>
   <script src="js/navFoot.js"></script>
